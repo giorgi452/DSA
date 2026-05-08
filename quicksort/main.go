@@ -45,6 +45,7 @@ func quicksort(arr []int) []int {
 			greater = append(greater, i)
 		}
 	}
+
 	result := append(quicksort(less), pivot)
 	result = append(result, quicksort(greater)...)
 
